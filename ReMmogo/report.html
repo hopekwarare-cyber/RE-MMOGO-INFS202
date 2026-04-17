@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports - Re-Mmogo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1><span class="brand-highlight">Re-Mmogo</span> WebApp</h1>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="groups.html">Groups</a>
+        <a href="members.html">Members</a>
+        <a href="contributions.html">Contributions</a>
+        <a href="loans.html">Loans</a>
+        <a href="approvals.html">Approvals</a>
+        <a href="reports.html" class="active">Reports</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-inner">
+
+      <!-- Summary cards -->
+      <section class="card">
+        <div class="card-header">
+          <h2>Year-End Summary</h2>
+          <span>Overview of contributions, loans and payouts</span>
+        </div>
+        <div class="summary-grid">
+          <div class="summary-card">
+            <div class="summary-label">Total Members</div>
+            <div class="summary-value">10</div>
+            <div class="summary-chip">Active</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-label">Total Contributions</div>
+            <div class="summary-value">P120,000</div>
+            <div class="summary-chip">All members</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-label">Total Interest</div>
+            <div class="summary-value">P50,000</div>
+            <div class="summary-chip">From loans</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-label">Total Payout</div>
+            <div class="summary-value">P170,000</div>
+            <div class="summary-chip">To distribute</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Member report -->
+      <section class="table-container">
+        <div class="card-header">
+          <h3>Member Report</h3>
+          <span>How much each member is getting</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Member</th>
+              <th>Total Contributed (P)</th>
+              <th>Interest Earned (P)</th>
+              <th>Final Payout (P)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>P12,000</td>
+              <td>P5,500</td>
+              <td>P17,500</td>
+            </tr>
+            <tr>
+              <td>Jane Doe</td>
+              <td>P12,000</td>
+              <td>P4,500</td>
+              <td>P16,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Interest leaderboard -->
+      <section class="table-container">
+        <div class="card-header">
+          <h3>Interest Leaderboard</h3>
+          <span>Who brought the most / least interest</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Member</th>
+              <th>Interest (P)</th>
+              <th>Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>P5,500</td>
+              <td><span class="badge badge-success">Highest</span></td>
+            </tr>
+            <tr>
+              <td>Someone Else</td>
+              <td>P2,000</td>
+              <td><span class="badge badge-danger">Lowest</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Re-Mmogo © 2026</p>
+  </footer>
+</body>
+</html>

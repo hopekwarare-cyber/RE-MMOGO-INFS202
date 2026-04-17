@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Re-Mmogo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Re-Mmogo WebApp</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="groups.html">Groups</a>
+      <a href="members.html">Members</a>
+      <a href="contributions.html">Contributions</a>
+      <a href="loans.html">Loans</a>
+      <a href="approvals.html">Approvals</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </header>
+
+  <main>
+  <section class="form-container">
+    <h2>Create Account</h2>
+    <form>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone">
+
+      <label for="role">Role</label>
+      <select id="role" required>
+        <option value="">Select role</option>
+        <option value="member">Member</option>
+        <option value="signatory">Signatory</option>
+      </select>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+</main>

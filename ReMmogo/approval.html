@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Approvals - Re-Mmogo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1><span class="brand-highlight">Re-Mmogo</span> WebApp</h1>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="groups.html">Groups</a>
+        <a href="members.html">Members</a>
+        <a href="contributions.html">Contributions</a>
+        <a href="loans.html">Loans</a>
+        <a href="approvals.html" class="active">Approvals</a>
+        <a href="reports.html">Reports</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-inner">
+
+      <!-- Loan approvals -->
+      <section class="table-container">
+        <div class="card-header">
+          <h2>Loan Approvals</h2>
+          <span>Loans waiting for signatory decision</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Member</th>
+              <th>Amount (P)</th>
+              <th>Requested On</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Example row (later from database) -->
+            <tr>
+              <td>John Doe</td>
+              <td>P2,000</td>
+              <td>2026-04-10</td>
+              <td><span class="badge badge-pending">Pending</span></td>
+              <td>
+                <button class="button-secondary">Approve</button>
+                <button class="button-secondary">Reject</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Payment approvals -->
+      <section class="table-container">
+        <div class="card-header">
+          <h2>Payment Approvals</h2>
+          <span>Contributions and repayments waiting for approval</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Member</th>
+              <th>Type</th>
+              <th>Amount (P)</th>
+              <th>Proof</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Example row -->
+            <tr>
+              <td>Jane Doe</td>
+              <td>Monthly Contribution</td>
+              <td>P1,000</td>
+              <td><a href="#">View</a></td>
+              <td><span class="badge badge-pending">Pending</span></td>
+              <td>
+                <button class="button-secondary">Approve</button>
+                <button class="button-secondary">Reject</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Re-Mmogo © 2026</p>
+  </footer>
+</body>
+</html>

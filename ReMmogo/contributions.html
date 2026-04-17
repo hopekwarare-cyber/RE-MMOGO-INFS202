@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Re-Mmogo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Re-Mmogo WebApp</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="groups.html">Groups</a>
+      <a href="members.html">Members</a>
+      <a href="contributions.html">Contributions</a>
+      <a href="loans.html">Loans</a>
+      <a href="approvals.html">Approvals</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </header>
+
+  <main>
+  <section class="form-container">
+    <h2>Record Monthly Contribution</h2>
+    <form>
+      <label for="memberName">Member Name</label>
+      <input type="text" id="memberName" required>
+
+      <label for="month">Month</label>
+      <input type="month" id="month" required>
+
+      <label for="amount">Amount (P)</label>
+      <input type="number" id="amount" value="1000" required>
+
+      <label for="proof">Proof of Payment (optional)</label>
+      <input type="file" id="proof">
+
+      <button type="submit">Submit Payment</button>
+    </form>
+  </section>
+
+  <section class="table-container">
+    <h3>Contribution History</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Member</th>
+          <th>Month</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Example Member</td>
+          <td>2026-01</td>
+          <td>P1000</td>
+          <td>Pending</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
